@@ -1,96 +1,166 @@
-body{
+body {
     color: black;
     background-color: white;
 
 }
-.navbar{
-    background-color: rgb(109, 190, 190)!important;
-   position:sticky;
-   top: 0;
-   z-index: 4;
+
+/*--- navbar--- */
+
+.navbar {
+    background-color: rgb(109, 190, 190) !important;
 }
-.nav-item{
+
+.nav-item {
     margin-right: 40px;
 }
-.carousel-item img{
+
+/*--- Carousel--- */
+
+
+
+.carousel-item img {
     height: 734px;
     object-fit: cover;
 
 }
-.about-img img{
+
+
+/*--- about-section--- */
+
+.about-img img {
     height: 300px;
     width: 300px;
     object-fit: cover;
 }
-.about{
+
+.about {
     padding: 90px 0;
 }
-.portfolio-card{
-    height: 350px;
-    width: 175px;
-    border: 1px solid #000;
+
+/*--- service-section--- */
+
+.service-card {
+    margin-right: 60px;
 }
-.item , .card{
+
+.services-slider .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card img {
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.service-card-body {
+    text-align: center;
+    color: white;
+    background-color: #000;
+    height: 200px;
+    margin-right: 60px;
+    position: absolute;
+    top: 78%;
+    transition: top ease-in 0.4s;
+}
+
+.service-card:hover .service-card-body {
+    top: 60%;
+}
+
+.services {
+    padding: 90px 0;
+}
+
+
+/* ---portfolio--- */
+
+.col-md-6:nth-child(1) .portfolio-img {
+    height: 390px;
+    width: 390px;
+    background-image: url('ayush (4).jpg');
+    padding: 35px;
+    margin: 20px;
+    background-position: top;
+}
+
+.col-md-6:nth-child(2) .portfolio-img {
+    height: 390px;
+    width: 390px;
+    background-image: url('ayush (1).jpg');
+    padding: 35px;
+    margin: 20px;
+    background-position: top;
+}
+
+.col-md-6:nth-child(3) .portfolio-img {
+    height: 390px;
+    width: 390px;
+    background-image: url('ayush (3).jpg');
+    padding: 35px;
+    margin: 20px;
+    background-position: 30% 5%;
+}
+
+.col-md-6:nth-child(4) .portfolio-img {
+    height: 390px;
+    width: 390px;
+    background-image: url('ayush (6).jpg');
+    padding: 35px;
+    margin: 20px;
+    background-position: 50% 5%;
+}
+
+.col-md-6 .portfolio-img .rect {
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    position: relative;
+    z-index: 2;
+    transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.7s;
+
+
+
+}
+
+.portfolio {
+    background-color: rgba(247, 247, 247, 0.653);
+    padding: 90px 0;
+}
+
+.portfolio-img .rect:hover {
+    background-color: #5f5f5f61;
+}
+
+.col-md-6 {
     display: flex;
     justify-content: center;
-    
-}
-.img-box{
-    height: 40px;width: 40px;
-    margin: 14px 125px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: aqua;
-    background-image:url("ayush (1).jpg") ;
-    background-size: cover;
-    
-}
-.card{
-    box-shadow: 5px 10px #888888;
-}
- .owl-dots{
-    display: none;
- }
- footer {
-	background-color: #333;
-	color: white;
-	padding: 26px 0;
-	margin-top: 20px;
-}
-.footer-columns {
-	display: flex;
-	justify-content: space-between;
-}
-.footer-column {
-	padding: 0 27px;
-	flex: 1;
-	margin-right: 20px;
 }
 
+.img-desc {
 
-li{
-	margin: 10px 3px;
-}
-a{
-	color: white;
-	text-decoration:none;
-}
-.display-6 .container .row{
-	padding: 0 0;
-}
-.newsletter-form{
-	margin-right: -4rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    transition: all ease-in-out 1s;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.61);
 }
 
-@media only screen and (max-width: 767px) {
-    .owl-carousel .owl-stage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .owl-carousel .owl-stage .owl-item {
-      width: 100%;
-    }
-  }
-  
+.portfolio-img:hover .img-desc,
+.portfolio-img:hover .img-desc a {
+    top: 20%;
+    opacity: 1;
+}
+
+.img-desc a {
+    margin-top: 50px;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.8s;
+}
+.portfolio-img{
+    animation: fadeInUp 1s;
+}
+
