@@ -1,0 +1,96 @@
+body{
+    color: black;
+    background-color: white;
+
+}
+.navbar{
+    background-color: rgb(109, 190, 190)!important;
+   position:sticky;
+   top: 0;
+   z-index: 4;
+}
+.nav-item{
+    margin-right: 40px;
+}
+.carousel-item img{
+    height: 734px;
+    object-fit: cover;
+
+}
+.about-img img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.about{
+    padding: 90px 0;
+}
+.portfolio-card{
+    height: 350px;
+    width: 175px;
+    border: 1px solid #000;
+}
+.item , .card{
+    display: flex;
+    justify-content: center;
+    
+}
+.img-box{
+    height: 40px;width: 40px;
+    margin: 14px 125px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: aqua;
+    background-image:url("ayush (1).jpg") ;
+    background-size: cover;
+    
+}
+.card{
+    box-shadow: 5px 10px #888888;
+}
+ .owl-dots{
+    display: none;
+ }
+ footer {
+	background-color: #333;
+	color: white;
+	padding: 26px 0;
+	margin-top: 20px;
+}
+.footer-columns {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-column {
+	padding: 0 27px;
+	flex: 1;
+	margin-right: 20px;
+}
+
+
+li{
+	margin: 10px 3px;
+}
+a{
+	color: white;
+	text-decoration:none;
+}
+.display-6 .container .row{
+	padding: 0 0;
+}
+.newsletter-form{
+	margin-right: -4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .owl-carousel .owl-stage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .owl-carousel .owl-stage .owl-item {
+      width: 100%;
+    }
+  }
+  
