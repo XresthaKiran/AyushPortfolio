@@ -14,6 +14,14 @@ body {
     margin-right: 40px;
 }
 
+
+.logo img ,.footer-logo img{
+    
+    height: 45px;
+    width: 187px;
+    object-fit: cover;
+
+}
 /*--- Carousel--- */
 
 
@@ -164,3 +172,9 @@ body {
     animation: fadeInUp 1s;
 }
 
+.footer-logo img{
+   
+    height: 40px;
+    width: 126px;
+    object-fit: cover;
+}
