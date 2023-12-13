@@ -178,3 +178,7 @@ body {
     width: 126px;
     object-fit: cover;
 }
+.icon li a{
+    margin-right: 10px;
+    font-size: 20px;
+}
